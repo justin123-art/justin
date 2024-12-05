@@ -31,7 +31,7 @@
         }
 
         .input-box input {
-            width: 100%;
+            width: 90%;
             height: 50px; /* Reduced height */
             background: transparent;
             border: 2px solid green;
