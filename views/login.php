@@ -166,7 +166,7 @@
                         </div>
                         <button type="submit" class="low">Log In</button>
                         <div class="register-link">
-                            <p>Don't have an account? <a href="authentication.php?sub_page=register">Register</a></p>
+                            <p>Don't have an account? <a href="../page/authentication.php?sub_page=register">Register</a></p>
                         </div>
                     </form>
                 </div>
