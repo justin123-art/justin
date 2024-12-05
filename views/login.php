@@ -47,7 +47,7 @@
                 }
                 .input-box {
                     position: relative;
-                    width: 10%;
+                    width: 100%;
                     height: 70px;
                     margin: 20px 0; 
                 }
