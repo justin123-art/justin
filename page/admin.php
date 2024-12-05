@@ -1,6 +1,4 @@
 <?php
-	//import model
-	include '../model/admin_model.php';
 
 	$page_info['page'] = 'admin'; //for page that needs to be called
 	$page_info['sub_page'] = isset($_GET['sub_page'])? $_GET['sub_page'] : 'admin'; //for function to be loaded
