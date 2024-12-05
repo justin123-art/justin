@@ -1,183 +1,175 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login Page</title>
-    
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+		<meta name="generator" content="Hugo 0.84.0">
+		<link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+	
+		
+	
+		<!-- Bootstrap core CSS -->
+		<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+	
+		<style>
+		.forms {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100vh;
+                    padding: 0 15px; 
+                }
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+                .wrapper {
+                    width: 100%;
+                    max-width: 520px;
+                    background: rgba(255, 255, 255, 0.8);
+                    border: 2px ;
+                    backdrop-filter: blur(10px);
+                    color: #131111;
+                    border-radius: 12px;
+                    padding: 50px 30px; 
+                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-        }
+                }
+                .wrapper h1 {
+                    font-size: 2.5rem; 
+                    text-align: center;
+                    margin-bottom: 30px; 
+                }
+                .logo {
+                    display: block;
+                    margin-left:  20px; 
+                    width: 100px; 
+                    height: auto; 
+                }
+                .input-box {
+                    position: relative;
+                    width: 100%;
+                    height: 70px;
+                    margin: 20px 0; 
+                }
+                .input-box input {
+                    width: 100%;
+                    height: 100%;
+                    background: transparent;
+                    border: 2px solid green;
+                    border-radius: 40px;
+                    font-size: 1rem; 
+                    color: #131111;
+                    padding: 20px 45px 20px 60px; 
+                }
+                .input-box i {
+                    position: absolute;
+                    left: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: orange;
+                }
+                .input-box input::placeholder {
+                    color: #e6c2c2;
+                }
+                .wrapper .remember-forgot {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 0.9rem; 
+                    margin: -15px 0 15px;
+                }
+                .remember-forgot a {
+                    color: #000;
+                    text-decoration: none;
+                }
+                .remember-forgot a:hover {
+                    text-decoration: underline;
+                }
+                .wrapper .low {
+                    width: 100%;
+                    height: 45px;
+                    background:green;
+                    border: none;
+                    outline: none;
+                    border-radius: 40px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+                    cursor: pointer;
+                    font-size: 1rem; 
+                    color: #fff;
+                    font-weight: 600;
+                }
+                .register-link {
+                    font-size: 0.9rem; 
+                    text-align: center;
+                    margin: 20px 0 15px;
+                }
+                .register-link p a {
+                    color: #0e0d0d;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+                .register-link p a:hover {
+                    text-decoration: underline;
+                }
 
-        .forms {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0 15px;
-        }
-
-        .wrapper {
-            width: 100%;
-            max-width: 400px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 12px;
-            padding: 40px 30px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-
-        .wrapper h1 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 30px;
-            font-size: 2rem;
-        }
-
-        .input-box {
-            position: relative;
-            margin-bottom: 20px;
-        }
-
-        .input-box input {
-            width: 100%;
-            height: 50px;
-            background: transparent;
-            border: 2px solid #4CAF50;
-            border-radius: 40px;
-            padding: 0 45px 0 20px;
-            font-size: 1rem;
-            outline: none;
-            transition: all 0.3s ease;
-        }
-
-        .input-box input:focus {
-            border-color: #45a049;
-            box-shadow: 0 0 10px rgba(76, 175, 80, 0.2);
-        }
-
-        .input-box i {
-            position: absolute;
-            left: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #4CAF50;
-            font-size: 1.1rem;
-        }
-
-        .input-box input::placeholder {
-            color: #999;
-        }
-
-        .low {
-            width: 100%;
-            height: 45px;
-            background: #4CAF50;
-            border: none;
-            border-radius: 40px;
-            color: white;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .low:hover {
-            background: #45a049;
-        }
-
-        .register-link {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9rem;
-        }
-
-        .register-link a {
-            color: #4CAF50;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .register-link a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 480px) {
-            .wrapper {
-                max-width: 95%;
-                padding: 30px 20px;
-            }
-
-            .wrapper h1 {
-                font-size: 1.8rem;
-            }
-
-            .input-box input {
-                font-size: 0.9rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <section id="forms" class="forms">
-        <div class="wrapper">
-            <form action="../page/authentication.php?function=login&sub_page=login" method="POST">
-                <h1>LOG IN</h1>
+                /* Footer Start */
+                #footer {
+                    padding: 15px 11%;
+                }
+                #footer .f-content {
+                    text-align: center;
+                }
+                .f-logo img {
+                    width: 250px;
+                    cursor: pointer;
+                }
+                .f-content i {
+                    font-size: 18px;
+                    color: black;
+                    padding: 10px;
+                    transition: 0.5s;
+                    cursor: pointer;
+                }
+                .f-content i:hover {
+                    background: #e53937;
+                    color: white;
+                    border-radius: 5px;
+                }   
+                /* Footer End */
                 
-                <?php if (!empty($msg)): ?>
-                    <div style="color: red; text-align: center; margin-bottom: 15px;">
-                        <?= $msg ?>
-                    </div>
-                <?php endif; ?>
-
-                <div class="input-box">
-                    <i class="fas fa-envelope"></i>
-                    <input 
-                        type="email" 
-                        id="email" 
-                        name="email" 
-                        placeholder="Email" 
-                        required 
-                        aria-label="Email"
-                    >
+                @media (max-width: 576px) {
+                    .wrapper h1 {
+                    font-size: 2rem; 
+                    }
+                    .input-box input {
+                    font-size: 0.9rem; 
+                    }
+                    .wrapper .low {
+                    font-size: 0.9rem;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+            <section id="forms" class="forms section-padding">
+                <div class="wrapper">
+				<form action="../page/authentication.php?function=login&&sub_page=login" method="POST">
+                    
+                        <h1>LOG IN</h1>
+						<label style="color:red;"><?= !empty($msg)? $msg:'' ?></label>
+                        <div class="input-box">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="Email" required aria-label="Email">
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" name="password" placeholder="Password" required aria-label="Password">
+                        </div>
+                        <button type="submit" class="low">Log In</button>
+                        <div class="register-link">
+                            <p>Don't have an account? <a href="../page/authentication.php?sub_page=register">Register</a></p>
+                        </div>
+                    </form>
                 </div>
-
-                <div class="input-box">
-                    <i class="fas fa-lock"></i>
-                    <input 
-                        type="password" 
-                        id="password" 
-                        name="password" 
-                        placeholder="Password" 
-                        required 
-                        aria-label="Password"
-                    >
-                </div>
-
-                <button type="submit" class="low">Log In</button>
-
-                <div class="register-link">
-                    <p>Don't have an account? 
-                        <a href="../page/authentication.php?sub_page=register">Register</a>
-                    </p>
-                </div>
-            </form>
-        </div>
-    </section>
-</body>
+            </section>	
+	</body>
 </html>
