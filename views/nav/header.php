@@ -33,17 +33,16 @@
                         <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
                     </ul>
+                    <form action="../page/authentication.php" class="d-flex">
+				
+							<button class="btn btn-outline-success <?= isset($_SESSION['loggedin'])? 'd-none': ''?>" type="submit">Login</button>
+						</form>
+						<a href="../page/logout.php" class="btn btn-outline-success <?= !isset($_SESSION['loggedin'])? 'd-none': ''?>" type="submit">Log out</a>
+						</form>
                 </div>
             </div>
         </nav>
-        <!-- Header - set the background image for the header in the line below-->
-        <header class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1600x900')">
-            <div class="text-center my-5">
-                <img class="img-fluid rounded-circle mb-4" src="https://dummyimage.com/150x150/6c757d/dee2e6.jpg" alt="..." />
-                <h1 class="text-white fs-3 fw-bolder">Full Width Pics</h1>
-                <p class="text-white-50 mb-0">Landing Page Template</p>
-            </div>
-        </header>
+        
     <!-- Bootstrap Bundle with Popper -->
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
     
