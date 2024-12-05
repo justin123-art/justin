@@ -24,7 +24,7 @@
 			//execute query
 			$query->execute();
 			//return
-			return $query->fetchAll(PDO::FETCH_ASSOC);
+			return $query->fetch(PDO::FETCH_ASSOC);
 		}
 		function register($data){//register
 			$query = "INSERT INTO `user_tb`(`user_name`, `user_email`, `user_password`) 
