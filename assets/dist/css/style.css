@@ -1,0 +1,11 @@
+.carousel img {
+    height: 500px; /* Set your desired height */
+    object-fit: cover; /* Ensure the image covers the allocated space */
+}
+
+/* Optionally add media queries for responsiveness */
+@media (max-width: 768px) {
+    .carousel img {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+}
