@@ -2,8 +2,8 @@
 	//import model
 	
 	include '../model/authenticationModel.php';
-	$page_info['page'] = 'index'; //for page that needs to be called
-	$page_info['sub_page'] = isset($_GET['sub_page'])? $_GET['sub_page'] : 'index'; //for function to be loaded
+	$page_info['page'] = 'dashboard'; //for page that needs to be called
+	$page_info['sub_page'] = isset($_GET['sub_page'])? $_GET['sub_page'] : 'dashboard'; //for function to be loaded
 		
 	//-----------------------//
 	//--  validate contact  --//
@@ -13,7 +13,7 @@
 		//check for active function
 		
 		//no active function, use the default page to view
-		new index($page_info);
+		new dashboard($page_info);
 		
 	}catch (Throwable $e){ //get the encountered error
 		echo '<h1>ERROR 404</h1>';
@@ -24,7 +24,7 @@
 	//-----------------------//
 	//--  Class Navigation --//
 	//-----------------------//
-	class index{
+	class dashboard{
 		//set default page info
 		private $page = '';
 		private $sub_page = '';
@@ -41,8 +41,8 @@
 		
 		//-----------------------------//
 		//--   function start here   --//
-		function index(){
-			include '../views/index.php';
+		function dashboard(){
+			include '../views/dashboard.php';
 		}
 	}
 ?>
