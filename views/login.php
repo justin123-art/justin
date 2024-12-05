@@ -52,8 +52,8 @@
                     margin: 20px 0; 
                 }
                 .input-box input {
-                    width: 100%;
-                    height: 100%;
+                    width: 90%;
+                    height: 80%;
                     background: transparent;
                     border: 2px solid green;
                     border-radius: 40px;
