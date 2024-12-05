@@ -47,13 +47,13 @@
                 }
                 .input-box {
                     position: relative;
-                    width: 90%;
-                    height: 50px;
+                    width: 100%;
+                    height: 70px;
                     margin: 20px 0; 
                 }
                 .input-box input {
-                    width: 70%;
-                    height: 50%;
+                    width: 100%;
+                    height: 100%;
                     background: transparent;
                     border: 2px solid green;
                     border-radius: 40px;
