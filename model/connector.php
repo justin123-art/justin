@@ -14,7 +14,7 @@ class Connector{
 	function __construct(){
 		try {
 			//$this->conn = new PDO("mysql:host=$this->servername;dbname=ab_db", $this->username, $this->password);
-			$this->conn = new PDO("mysql:host=$this->servername;dbname=final_td_db", $this->username, $this->password);
+			$this->conn = new PDO("mysql:host=$this->servername;dbname=final_tb_db", $this->username, $this->password);
 			// set the PDO error mode to exception
 			$this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			//echo "Connected successfully";
