@@ -90,7 +90,7 @@
 			if ($login){
 				if($login['user_type'] == 'admin'){
 
-					header('location:../page/dashboard.php');
+					header('location:../page/home.php');
 				}else{
 					$_SESSION['loggedin'] = 'active';
 					header('location:../page/home.php');
