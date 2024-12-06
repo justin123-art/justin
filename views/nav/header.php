@@ -45,10 +45,16 @@
     * Updated: Aug 15 2024 with Bootstrap v5.3.3
     * Author: BootstrapMade.com
     * License: https://bootstrapmade.com/license/
-    ======================================================== -->
+    =====================================================-->
 
     <style>
-        /* Optional: Add any custom styles here */
+        /* Make the logo circular */
+        .logo img {
+            width: 20vh; /* Adjust size of logo */
+            height:20vh; /* Maintain equal height and width */
+            border-radius: 20vh; /* Create circle shape */
+            object-fit: cover; /* Ensure the image fits within the circle */
+        }
     </style>
 </head>
 
@@ -58,38 +64,16 @@
     <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <!-- <img src="assets/img/logo.png" alt=""> -->
-                <h1 class="sitename">GP</h1>
-                <span>.</span>
+                <!-- Logo inside a circle -->
+                <img src="../assets/img/cr.png" alt=""> <!-- Replace this with your logo image path -->
+                
             </a>
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="home.php" class="active">Home<br></a></li>
+                    <li><a href="home.php">Home</a></li>
                     <li><a href="about.php">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li class="dropdown">
-                        <a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li><a href="#">Dropdown 1</a></li>
-                            <li class="dropdown">
-                                <a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Dropdown 1</a></li>
-                                    <li><a href="#">Deep Dropdown 2</a></li>
-                                    <li><a href="#">Deep Dropdown 3</a></li>
-                                    <li><a href="#">Deep Dropdown 4</a></li>
-                                    <li><a href="#">Deep Dropdown 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Dropdown 2</a></li>
-                            <li><a href="#">Dropdown 3</a></li>
-                            <li><a href="#">Dropdown 4</a></li>
-                        </ul>
-                    </li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -102,7 +86,6 @@
             <a href="../page/logout.php" class="btn btn-outline-success <?= !isset($_SESSION['loggedin']) ? 'd-none' : '' ?>" type="submit">Log out</a>
         </div>
     </header>
-
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
