@@ -5,9 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0">
-    <title>Your Page Title</title>
+    <title>DASHBOARD</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -21,13 +19,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" rel="stylesheet" />
     
     <!-- Favicons -->
-    <link href="../assets/img/favicon.png" rel="icon">
     <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -39,22 +36,7 @@
     <!-- Main CSS File -->
     <link href="../assets/css/main.css" rel="stylesheet">
 
-    <!-- =======================================================
-    * Template Name: Gp
-    * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-    * Updated: Aug 15 2024 with Bootstrap v5.3.3
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    =====================================================-->
-
     <style>
-        /* Make the logo circular */
-        .logo img {
-            width: 20vh; /* Adjust size of logo */
-            height:20vh; /* Maintain equal height and width */
-            border-radius: 20vh; /* Create circle shape */
-            object-fit: cover; /* Ensure the image fits within the circle */
-        }
     </style>
 </head>
 
@@ -63,21 +45,49 @@
     <!-- Navigation -->
     <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-                <!-- Logo inside a circle -->
-                <img src="../assets/img/cr.png" alt=""> <!-- Replace this with your logo image path -->
-                
+            <a href="" class="logo d-flex align-items-center me-auto me-lg-0">
+                <h1 class="sitename">CARWASH</h1>
+                <span>.</span>
             </a>
 
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li><a href="home.php">Home</a></li>
                     <li><a href="about.php">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="services.php">Services</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownThemeMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                    Theme
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownThemeMenu">
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center rounded-1" data-bs-theme-value="light" aria-pressed="false">
+                            <svg fill="currentColor" class="bi me-2 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                            Light
+                            <svg fill="currentColor" class="bi ms-auto d-none active-check" width="1em" height="1em"><use href="#check2"></use></svg>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center rounded-1 my-1" data-bs-theme-value="dark" aria-pressed="false">
+                            <svg fill="currentColor" class="bi me-2 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                            Dark
+                            <svg fill="currentColor" class="bi ms-auto d-none active-check" width="1em" height="1em"><use href="#check2"></use></svg>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center rounded-1 active" data-bs-theme-value="auto" aria-pressed="true">
+                            <svg fill="currentColor" class="bi me-2 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                            Auto
+                            <svg fill="currentColor" class="bi ms-auto d-none active-check" width="1em" height="1em"><use href="#check2"></use></svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
 
             <a class="btn-getstarted" href="index.html#about">Get Started</a>
             <form action="../page/authentication.php" class="d-flex">

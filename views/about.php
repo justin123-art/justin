@@ -1,8 +1,8 @@
 <?php
 include 'nav/header.php';
 ?>
-  <!-- About Section -->
-  <section id="about" class="about section">
+<!-- About Section -->
+<section id="about" class="about section" style="background-color: rgb(0, 0, 0); padding-top: 80px;">
 
 <div class="container" data-aos="fade-up" data-aos-delay="100">
 
