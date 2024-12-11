@@ -10,7 +10,7 @@ include 'nav/header.php';
       <img src="../assets/img/about.jpg" class="img-fluid" alt="">
     </div>
     <div class="col-lg-6 order-2 order-lg-1 content">
-      <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-bold about-title">
+      <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold about-title">
           ABOUT US
       </h3>
 
