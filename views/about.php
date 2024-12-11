@@ -1,12 +1,11 @@
 <?php
 include 'nav/header.php';
 ?>
-<!-- About Section -->
-<section id="about" class="about section" style="padding-top:20vh;">
+<section id="about" class="about section" style="padding-top:20vh;">                     
 
 <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-  <div class="row gy-4">
+  <div class="row gy-4">       
     <div class="col-lg-6 order-1 order-lg-2">
       <img src="../assets/img/about.jpg" class="img-fluid" alt="">
     </div>
@@ -24,11 +23,12 @@ include 'nav/header.php';
 
 </div>
 
-</section><!-- /About Section -->
+</section>
 
 <style>
   .about-title {
-    font-size: 36px;  /* Larger font size */
-    font-weight: bolder;  /* Bolder text */
+    font-size: 36px;
+    font-weight: bolder;
+    margin-bottom: 30px !important;  
   }
 </style>
