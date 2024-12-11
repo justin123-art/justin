@@ -11,19 +11,27 @@ include 'nav/header.php';
       <img src="../assets/img/about.jpg" class="img-fluid" alt="">
     </div>
     <div class="col-lg-6 order-2 order-lg-1 content">
-      <h3>Voluptatem dignissimos provident</h3>
+      <h3>About Us</h3>
       <p class="fst-italic">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
+      Welcome to Car Wash , where we believe that every vehicle deserves a little TLC! Founded in 2015, our mission is to provide exceptional car wash and detailing services that leave your vehicle looking pristine and feeling fresh.
+      We’re not just washing cars; we’re building relationships. We invite you to experience the difference and see why so many customers trust us with their vehicles. Thank you for choosing us as your go-to car wash!
+      </p>
+    </div>
+    <div class="col-lg-6 order-2 order-lg-1 content">
+      <h3>Our Services</h3>
+      <p class="fst-italic">
+      We offer a range of services tailored to meet your needs, including:
       </p>
       <ul>
-        <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-        <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-        <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-      </ul>
+        <li><i class="bi bi-check2-all"></i> <span>SHINY TIRES : We use a superior water-based silicone product that delivers a glistening shine while reducing any sling that ends up on the vehicle.</span></li>
+        <li><i class="bi bi-check2-all"></i> <span>GO WAX : Go Wax is made up of special formulated polymers.These fill the microspic pores in the cars paints and glass to provide advance 
+								protection and long-lasting crystal-like shine.</span></li>
+        <li><i class="bi bi-check2-all"></i> <span>PRIME DRY : A low ph foam that helps prep the surface of the vehicle to aid in the beading and grouping of water molecules to promote
+        water repellency    and help produce an extremely dry car.</span></li></ul>
       <p>
-        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+      We’re not just washing cars; we’re building relationships. We invite you to experience the difference and see why so many customers trust us with their vehicles. Thank you for choosing us as your go-to car wash!
+
+
       </p>
     </div>
   </div>
