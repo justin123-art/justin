@@ -1,5 +1,8 @@
 <?php
-     include '../model/authenticationModel.php';
+
+include '../model/authenticationModel.php';
+include '../model/admin_model.php';
+
 	$page_info['page'] = 'admin_dashboard'; //for page that needs to be called
 	$page_info['sub_page'] = isset($_GET['sub_page'])? $_GET['sub_page'] : 'admin_dashboard'; //for function to be loaded
 		
@@ -42,7 +45,17 @@
 		//-----------------------------//
 		//--   function start here   --//
 		function admin_dashboard(){
+			//instanciate model
+			$admin = new AdminModel();
+			
+			//add province
+			$services = $admin->getService($_POST);
+			$inven = $admin->getInventory($_POST);
+			$feed = $admin->getFeeds($_POST);
+			$book = $admin->getBookings($_POST);
+
 			include '../views/admin_dashboard.php';
 		}
     }
+	
         ?>

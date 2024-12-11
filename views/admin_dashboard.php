@@ -36,8 +36,8 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-line fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Today Sale</p>
-                                <h6 class="mb-0">$1234</h6>
+                                <p class="mb-2">Feedback</p>
+                                <h6 class="mb-0"><?= count($feed) ?></h6>
                             </div>
                         </div>
                     </div>
@@ -45,8 +45,8 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-bar fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Total Sale</p>
-                                <h6 class="mb-0">$1234</h6>
+                                <p class="mb-2">Services</p>
+                                <h6 class="mb-0"><?= count($services) ?></h6>
                             </div>
                         </div>
                     </div>
@@ -54,8 +54,8 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-area fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Today Revenue</p>
-                                <h6 class="mb-0">$1234</h6>
+                                <p class="mb-2">Inventory</p>
+                                <h6 class="mb-0"><?= count($inven) ?></h6>
                             </div>
                         </div>
                     </div>
@@ -63,8 +63,8 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-pie fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Total Revenue</p>
-                                <h6 class="mb-0">$1234</h6>
+                                <p class="mb-2">Bookings</p>
+                                <h6 class="mb-0"><?= count($book) ?></h6>
                             </div>
                         </div>
                     </div>
