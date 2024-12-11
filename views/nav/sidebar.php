@@ -25,7 +25,7 @@
                             <a href="" class="dropdown-item">Sales</a>
                         </div>
                     </div>
-                    <a href="" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Bookings</a>
+                    <a href="" class="nav-item nav-link"><i class="fa fa-calendar"></i>Bookings</a>
                     <a href="" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
                     <a href="" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
                     </div>
