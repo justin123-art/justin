@@ -2,81 +2,107 @@
 include 'nav/header.php';
 ?>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+  <!-- Contact us -->
+  <div id="contact-us" class="overflow-hidden py-7 py-sm-8">
+        <div class="container">
+            <div class="row gy-5 gx-sm-5">
+                <div class="col-12 col-xl-5 pt-4">
+                    <div class="mx-auto max-w-xl text-center text-xl-start">
+                        <h2 class="m-0 text-primary-emphasis text-base leading-7 fw-semibold">
+                            Get in touch
+                        </h2>
+                        <p class="m-0 mt-2 text-body-emphasis text-3xl tracking-tight leading-10 fw-bold">
+                            Have any questions or need assistance? Contact us today!
+                        </p>
+                    </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Contact Us</p>
-      </div><!-- End Section Title -->
+                    <div class="mx-auto max-w-2xl mt-6">
+                        <form class="row g-4 needs-validation" id="myForm" novalidate>
+                            <div class="col-md-6">
+                                <label for="nameForm" class="form-label text-sm">
+                                    Full name
+                                    <span class="text-danger-emphasis">*</span>
+                                </label>
+                                <input type="text" class="form-control form-control-sm" name="nameForm" id="nameForm" required>
+                                <div class="invalid-feedback text-xs">
+                                    Please enter your full name.
+                                </div>
+                            </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+                            <div class="col-md-6">
+                                <label for="emailForm" class="form-label text-sm">
+                                    Email address
+                                    <span class="text-danger-emphasis">*</span>
+                                </label>
+                                <input type="email" class="form-control form-control-sm" name="emailForm" id="emailForm" required>
+                                <div class="invalid-feedback text-xs">
+                                    Please enter your email address.
+                                </div>
+                            </div>
 
-        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1003355.1435673393!2d124.77683794999999!3d10.78402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33079748942072a9%3A0x26e609fddaa0d714!2sLeyte!5e0!3m2!1sen!2sph!4v1733470470372!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div><!-- End Google Maps -->
+                            <div class="col-md-6">
+                                <label for="phoneForm" class="form-label text-sm">
+                                    Phone number
+                                    <span class="text-danger-emphasis">*</span>
+                                </label>
+                                <input type="text" class="form-control form-control-sm" name="phoneForm" id="phoneForm" required>
+                                <div class="invalid-feedback text-xs">
+                                    Please enter your phone number.
+                                </div>
+                            </div>
 
-        <div class="row gy-4">
+                            <div class="col-md-6">
+                                <label for="subjectForm" class="form-label text-sm">
+                                    Subject
+                                    <span class="text-danger-emphasis">*</span>
+                                </label>
+                                <input type="text" class="form-control form-control-sm" name="subjectForm" id="subjectForm" required>
+                                <div class="invalid-feedback text-xs">
+                                    Please enter a subject for your message.
+                                </div>
+                            </div>
 
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-              </div>
-            </div><!-- End Info Item -->
+                            <div class="mb-3">
+                                <label for="messageForm" class="form-label text-sm">
+                                    Your message
+                                    <span class="text-danger-emphasis">*</span>
+                                </label>
+                                <textarea class="form-control form-control-sm" name="messageForm" id="messageForm" rows="3" required></textarea>
+                                <div class="invalid-feedback text-xs">
+                                    Please enter a message.
+                                </div>
+                            </div>
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-              </div>
-            </div><!-- End Info Item -->
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                                    <label class="form-check-label text-sm" for="gridCheck">
+                                        I agree to the terms &amp; conditions and privacy policy
+                                        <span class="text-danger-emphasis">*</span>
+                                    </label>
+                                    <div class="invalid-feedback text-xs">
+                                        Please agree to the terms &amp; conditions and privacy policy.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12 text-center pt-3">
+                                <button type="submit" class="btn btn-lg btn-primary text-white text-sm fw-semibold" id="sendMessage">
+                                    Send message
+                                </button>
+                            </div>
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-
-          <div class="col-lg-8">
-            <form action="../assets/forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                            <!-- Alert message  -->
+                            <div class="col-12" id="yourMessageIsSent"></div>
+                        </form>
+                    </div>
                 </div>
 
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                <div class="col-12 col-xl-7 pt-7 pt-xl-0" style="min-height: 450px;">
+                    <div class="h-100 position-relative ms-xxl-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1003355.1435673393!2d124.77683794999999!3d10.78402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33079748942072a9%3A0x26e609fddaa0d714!2sLeyte!5e0!3m2!1sen!2sph!4v1733812401300!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
+            </div>
         </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
+    </div>

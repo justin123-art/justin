@@ -2,7 +2,7 @@
 include 'nav/header.php';
 ?>
 <!-- About Section -->
-<section id="about" class="about section" style="background-color: rgb(0, 0, 0); padding-top: 80px;">
+<section id="about" class="about section" style="padding-top:20vh;">
 
 <div class="container" data-aos="fade-up" data-aos-delay="100">
 

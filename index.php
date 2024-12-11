@@ -1,0 +1,1 @@
+<script>window.location.href='page/home.php';</script>

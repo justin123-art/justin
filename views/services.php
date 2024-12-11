@@ -2,186 +2,85 @@
 include 'nav/header.php';
 ?>
 
-<!-- Clients Section -->
-<section id="clients" class="clients section">
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="swiper init-swiper">
-      <script type="application/json" class="swiper-config">
-        {
-          "loop": true,
-          "speed": 600,
-          "autoplay": {
-            "delay": 5000
-          },
-          "slidesPerView": "auto",
-          "pagination": {
-            "el": ".swiper-pagination",
-            "type": "bullets",
-            "clickable": true
-          },
-          "breakpoints": {
-            "320": {
-              "slidesPerView": 2,
-              "spaceBetween": 40
-            },
-            "480": {
-              "slidesPerView": 3,
-              "spaceBetween": 60
-            },
-            "640": {
-              "slidesPerView": 4,
-              "spaceBetween": 80
-            },
-            "992": {
-              "slidesPerView": 6,
-              "spaceBetween": 120
-            }
-          }
-        }
-      </script>
-      <div class="swiper-wrapper align-items-center">
-        <div class="swiper-slide"><img src="../assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="../assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="../assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="../assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="../assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="../assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="../assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="../assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-</section><!-- /Clients Section -->
+<!-- services -->
+<div class="overflow-hidden py-7 py-sm-8 py-xl-9 bg-body-tertiary">
+	    <div class="container">
+	        <div>
+	            <div class="mx-auto max-w-2xl text-center">
+					<h2 class="m-0 text-primary-emphasis text-base leading-7 fw-semibold">
+						Our services
+					</h2>
+	                <p class="m-0 mt-2 text-body-emphasis text-4xl tracking-tight fw-bold">
+					Shine On, Drive On
+	                </p>
+	                <p class="m-0 mt-4 text-body text-lg leading-8">
+					A Car Wash Experience like No Other
+	                </p>
+	            </div>
+	        </div>
+	        <div>
+	            <div class="row row-cols-1 row-cols-xl-3 gy-5 gx-xl-4 mt-1 justify-content-center justify-content-xl-between">
+	                <div class="col pt-5 pt-xl-4">
+	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="0" data-aos="fade" data-aos-duration="1000">
+                        	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
+                                <img src="../assets/img/bg/tires_1.png" class="object-fit-cover rounded-3" alt="Service image" loading="lazy">
+                            </div>
 
-<!-- Features Section -->
-<section id="features" class="features section">
-  <div class="container">
-    <div class="row gy-4">
-      <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <img src="../assets/img/features-bg.jpg" alt="">
-      </div>
-      <div class="col-lg-6">
-        <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
-          <i class="bi bi-archive flex-shrink-0"></i>
-          <div>
-            <h4>Est labore ad</h4>
-            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-          </div>
-        </div><!-- End Features Item-->
+                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
+                               SHINY TIRES 
+                            </h3>
 
-        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
-          <i class="bi bi-basket flex-shrink-0"></i>
-          <div>
-            <h4>Harum esse qui</h4>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-          </div>
-        </div><!-- End Features Item-->
+                            <!-- Remove line-clamp-2 if you need more lines or add line-clamp-3 -->
+                            <p class="m-0 mt-3 text-body-secondary line-clamp-2 text-sm leading-6">
+                                We use a superior water-based silicone product that delivers a glistening shine while reducing any sling that ends up on the vehicle.
+                            </p>
+	                    </div>
+	                </div>
+      				
+      				<div class="col pt-5 pt-xl-4">
+	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="100" data-aos="fade" data-aos-duration="1000">
+                        	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
+                                <img src="../assets/img/bg/wax_1.png" class="object-fit-cover rounded-3" alt="Service image" loading="lazy">
+                            </div>
 
-        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
-          <i class="bi bi-broadcast flex-shrink-0"></i>
-          <div>
-            <h4>Aut occaecati</h4>
-            <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-          </div>
-        </div><!-- End Features Item-->
+                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
+                              GO WAX
+                            </h3>
 
-        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
-          <i class="bi bi-camera-reels flex-shrink-0"></i>
-          <div>
-            <h4>Beatae veritatis</h4>
-            <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-          </div>
-        </div><!-- End Features Item-->
-      </div>
-    </div>
-  </div>
-</section><!-- /Features Section -->
+                            <!-- Remove line-clamp-2 if you need more lines or add line-clamp-3 -->
+                            <p class="m-0 mt-3 text-body-secondary line-clamp-2 text-sm leading-6">
+                                Go Wax is made up of special formulated polymers.These fill the microspic pores in the cars paints and glass to provide advance 
+								protection and long-lasting crystal-like shine.
+                            </p>
+	                    </div>
+	                </div>
 
-<!-- Services Section -->
-<section id="services" class="services section">
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Services</h2>
-    <p>Check our Services</p>
-  </div><!-- End Section Title -->
+	                <div class="col pt-5 pt-xl-4">
+	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="200" data-aos="fade" data-aos-duration="1000">
+                        	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
+                                <img src="../assets/img/bg/dry_1.png" class="object-fit-cover rounded-3" alt="Service image" loading="lazy" class="center">
+                            </div>
 
-  <div class="container">
-    <div class="row gy-4">
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-item position-relative">
-          <div class="icon">
-            <i class="bi bi-activity"></i>
-          </div>
-          <a href="service-details.html" class="stretched-link">
-            <h3>Nesciunt Mete</h3>
-          </a>
-          <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-        </div>
-      </div><!-- End Service Item -->
+                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
+                               PRIME DRY
+                            </h3>
 
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item position-relative">
-          <div class="icon">
-            <i class="bi bi-broadcast"></i>
-          </div>
-          <a href="service-details.html" class="stretched-link">
-            <h3>Eosle Commodi</h3>
-          </a>
-          <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-        </div>
-      </div><!-- End Service Item -->
+                            <!-- Remove line-clamp-2 if you need more lines or add line-clamp-3 -->
+                            <p class="m-0 mt-3 text-body-secondary line-clamp-2 text-sm leading-6">
+                              A low ph foam that helps prep the surface of the vehicle to aid in the beading and grouping of water molecules to promote
+							  water repellency    and help produce an extremely dry car.
+                            </p>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
 
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="service-item position-relative">
-          <div class="icon">
-            <i class="bi bi-easel"></i>
-          </div>
-          <a href="service-details.html" class="stretched-link">
-            <h3>Ledo Markt</h3>
-          </a>
-          <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-        </div>
-      </div><!-- End Service Item -->
-
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-        <div class="service-item position-relative">
-          <div class="icon">
-            <i class="bi bi-bounding-box-circles"></i>
-          </div>
-          <a href="service-details.html" class="stretched-link">
-            <h3>Asperiores Commodit</h3>
-          </a>
-          <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-          <a href="service-details.html" class="stretched-link"></a>
-        </div>
-      </div><!-- End Service Item -->
-
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-        <div class="service-item position-relative">
-          <div class="icon">
-            <i class="bi bi-calendar4-week"></i>
-          </div>
-          <a href="service-details.html" class="stretched-link">
-            <h3>Velit Doloremque</h3>
-          </a>
-          <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-          <a href="service-details.html" class="stretched-link"></a>
-        </div>
-      </div><!-- End Service Item -->
-
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-        <div class="service-item position-relative">
-          <div class="icon">
-            <i class="bi bi-chat-square-text"></i>
-          </div>
-          <a href="service-details.html" class="stretched-link">
-            <h3>Dolori Architecto</h3>
-          </a>
-          <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-          <a href="service-details.html" class="stretched-link"></a>
-        </div>
-      </div><!-- End Service Item -->
-    </div>
-  </div>
-</section><!-- /Services Section -->
+	        <div class="text-center pt-7">
+	            <a href="javascript:;" class="btn btn-lg btn-primary text-white icon-link icon-link-hover text-sm leading-6 fw-semibold">
+                    Learn more 
+                    <span class="bi align-self-start left-to-right" aria-hidden="true">→</span>
+                    <span class="bi align-self-start right-to-left" aria-hidden="true">←</span>
+                </a>
+	        </div>
+	    </div>      
+	</div>	
