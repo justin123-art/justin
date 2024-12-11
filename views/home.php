@@ -16,10 +16,10 @@ include 'nav/header.php';
 		                <div class="mt-4 pt-2">
 		                    <div class="text-center text-xl-start">
 		                        <h1 class="m-0 text-white tracking-tight text-6xl fw-bold" data-aos-delay="0" data-aos="fade" data-aos-duration="3000">
-		                            Experience Ultimate Cleanliness
+								Get your shine on
 		                        </h1>
 		                        <p class="m-0 mt-4 text-white text-lg leading-8" data-aos-delay="100" data-aos="fade" data-aos-duration="3000">
-		                            No more worries about laundry! Let our professional crew at Freshen Laundry Service take the task off your hands.
+								No more worries about a dirty car! Let our professional crew at Freshen Car Wash take the task off your hands.
 		                        </p>
 		                        <div class="mt-4 pt-3 d-flex align-items-center justify-content-center justify-content-xl-start column-gap-3">
 		                            <a href="javascript:;" class="btn btn-lg btn-primary text-white text-sm fw-semibold" data-aos-delay="200" data-aos="fade" data-aos-duration="3000">
