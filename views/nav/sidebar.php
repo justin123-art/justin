@@ -22,9 +22,10 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-receipt-cutoff"></i>Inventory</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="" class="dropdown-item">Product</a>
-                            <a href="" class="dropdown-item">Sales</a>
-                        </div>
+                            <a href="" class="nav-item nav-link" class="dropdown-item"><i class="fa fa-tag icon"></i>Product</a>
+                            <a href="" class="nav-item nav-link" class="dropdown-item">  <i class="fa fa-shopping-cart icon"></i>
+                            Sales</a>
+                        </div> 
                     </div>
                     <a href="" class="nav-item nav-link"><i class="fa fa-calendar"></i>Bookings</a>
                     <a href="" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
