@@ -35,6 +35,8 @@ include 'nav/header.php';
                                 We use a superior water-based silicone product that delivers a glistening shine while reducing any sling that ends up on the vehicle.
                             </p>
 	                    </div>
+						<a href="booking.php"><button type="button" class="btn btn-warning">Booking</button>
+					       </a>
 	                </div>
       				
       				<div class="col pt-5 pt-xl-4">
@@ -53,6 +55,8 @@ include 'nav/header.php';
 								protection and long-lasting crystal-like shine.
                             </p>
 	                    </div>
+						<a href=""><button type="button" class="btn btn-warning">Booking</button>
+					       </a>
 	                </div>
 
 	                <div class="col pt-5 pt-xl-4">
@@ -71,16 +75,10 @@ include 'nav/header.php';
 							  water repellency    and help produce an extremely dry car.
                             </p>
 	                    </div>
+						<a href=""><button type="button" class="btn btn-warning">Booking</button>
+					       </a>
 	                </div>
 	            </div>
-	        </div>
-
-	        <div class="text-center pt-7">
-	            <a href="javascript:;" class="btn btn-lg btn-primary text-white icon-link icon-link-hover text-sm leading-6 fw-semibold">
-                    Learn more 
-                    <span class="bi align-self-start left-to-right" aria-hidden="true">→</span>
-                    <span class="bi align-self-start right-to-left" aria-hidden="true">←</span>
-                </a>
 	        </div>
 	    </div>      
 	</div>	

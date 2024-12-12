@@ -50,9 +50,10 @@ include '../model/admin_model.php';
 			
 			//add province
 			$services = $admin->getService($_POST);
-			$inven = $admin->getInventory($_POST);
+			$User = $admin->getUser($_POST);
 			$feed = $admin->getFeeds($_POST);
 			$book = $admin->getBookings($_POST);
+			$contactInfo = $admin->getContactInfo();
 
 			include '../views/admin_dashboard.php';
 		}

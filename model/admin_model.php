@@ -23,9 +23,9 @@
 			//return
 			return $query->fetchAll(PDO::FETCH_ASSOC);
 		}
-		function getInventory(){
+		function getUser(){
 			//prepare the sql
-			$sql = "SELECT * FROM inventory_tb";
+			$sql = "SELECT * FROM user_tb";
 			//prepare query
 			$query = $this->conn->prepare($sql);
 			
@@ -60,6 +60,34 @@
 			//return
 			return $query->fetchAll(PDO::FETCH_ASSOC);
 		}
+		function getContactInfo()
+			{
+				$query = "SELECT * FROM contact_tb";
+				$stmt = $this->conn->prepare($query);
+				$stmt->execute();
+				return $stmt->fetchAll();
+			}
+			function getBookingInfo()
+			{
+				$query = "SELECT * FROM booking_tb";
+				$stmt = $this->conn->prepare($query);
+				$stmt->execute();
+				return $stmt->fetchAll();
+			}
+		
+			function deleteBooking($get){
+				//prepare the sql
+				$sql = "DELETE FROM booking_tb WHERE book_id = '{$get['id']}'";
+				//prepare query
+				$query = $this->conn->prepare($sql);
+				
+				//execute query
+				$query->execute();
+				//return
+				return $query->fetchAll(PDO::FETCH_ASSOC);
+			}
+				
+		
 		
 		
 		//-------------------------------//

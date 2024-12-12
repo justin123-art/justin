@@ -287,3 +287,79 @@
     background: var(--dark);
     border-color: var(--primary);
 }
+#booking {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#booking h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#booking .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#booking .col-md-6 {
+    flex-basis: 45%;
+    margin: 20px;
+}
+
+#booking form {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking form .form-group {
+    margin-bottom: 20px;
+}
+
+.booking form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.booking form input, #booking form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking form button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.booking table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.booking th, #booking td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.booking th {
+    background-color: #f0f0f0;
+}

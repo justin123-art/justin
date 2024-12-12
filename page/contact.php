@@ -1,5 +1,6 @@
 <?php
 	//import model
+include '../model/admin_model.php';
 	
 	include '../model/authenticationModel.php';
 	$page_info['page'] = 'contact'; //for page that needs to be called
@@ -42,7 +43,13 @@
 		//-----------------------------//
 		//--   function start here   --//
 		function contact(){
+			//instanciate model
+			$admin = new AdminModel();
+			
+			$contactInfo = $admin->getContactInfo();
+
 			include '../views/contact.php';
 		}
 	}
+	
 ?>
