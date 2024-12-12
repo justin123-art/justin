@@ -3,7 +3,11 @@ include 'nav/header.php';
 ?>
 <!-- header body -->
 <div class="overflow-hidden position-relative">
+<<<<<<< HEAD
     <video src="../assets/img/video/bg.mp4" class="position-absolute z-n1 top-0 h-100 w-100 object-fit-cover" alt="Meeting" autoplay muted loop></video>
+=======
+	   <img src="../assets/img/bg/carwash2.jpg" class="position-absolute z-n1 top-0 h-100 w-100 object-fit-cover" alt="Meeting">
+>>>>>>> f2d34fb49415bedb03fb35c356b049fe76e2b67a
 
     <div class="overlay position-absolute z-n1 top-0 h-100 w-100 bg-dark"
         style="opacity: 0.85; mix-blend-mode: multiply; filter: contrast(1.15) brightness(0.85);">
