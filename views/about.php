@@ -6,11 +6,8 @@ include 'nav/header.php';
 <div class="container" data-aos="fade-up" data-aos-delay="100">
 
   <div class="row gy-4">       
-    <div class="col-lg-6 order-1 order-lg-2">
-      <img src="../assets/img/about.jpg" class="img-fluid" alt="">
-    </div>
-    <div class="col-lg-6 order-2 order-lg-1 content">
-      <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-bold about-title">
+    <div class="col-lg-6 content d-flex flex-column justify-content-center">
+      <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold about-title">
           ABOUT US
       </h3>
 
@@ -19,6 +16,9 @@ include 'nav/header.php';
         We’re not just washing cars; we’re building relationships. We invite you to experience the difference and see why so many customers trust us with their vehicles. Thank you for choosing us as your go-to car wash!
       </p>
     </div>
+    <div class="col-lg-6">
+      <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="img-fluid" alt="Car Wash Photo">
+    </div>    
   </div>
 
 </div>
