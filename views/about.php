@@ -22,7 +22,7 @@ include 'nav/header.php';
   </div>
 
 </div>
-
+     
 </section>
 
 <style>
