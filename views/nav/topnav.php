@@ -1,3 +1,4 @@
+  
   <!-- Content Start -->
   <div class="content">
             <!-- Navbar Start -->
@@ -101,5 +102,3 @@
     <script src="../assets/libraries/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
      <!-- Template Javascript -->
      <script src="../assets/js/main.js"></script>
-
-    <script src="../assets/js/main.js"></script>

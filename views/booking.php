@@ -3,6 +3,7 @@
 <?php
             include 'nav/sidebar.php';
             include 'nav/topnav.php'; ?>
+            
             <table class="table">
                 <thead>
                     <tr>
