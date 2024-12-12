@@ -48,7 +48,7 @@
 
                         <form action="../page/authentication.php?function=login&&sub_page=login" method="POST">
                             <div class="form-floating mb-3">
-                                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required aria-label="Email">
+                                <input type="text" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required aria-label="Email">
                                 <label for="floatingInput">Email address</label>
                             </div>
                             <div class="form-floating mb-4">

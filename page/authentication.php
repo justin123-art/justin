@@ -8,7 +8,7 @@
 	//-----------------------//
 	//--     --//
 	//-----------------------//
-	session_start();
+	
 	if(!isset($_SESSION['loggedin'])){
 		try {//used try to catch unfortunate errors
 			//check for active function
