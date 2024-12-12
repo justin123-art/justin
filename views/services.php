@@ -23,7 +23,7 @@ include 'nav/header.php';
 	                <div class="col pt-5 pt-xl-4">
 	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="0" data-aos="fade" data-aos-duration="1000">
                         	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                                <img src="../assets/img/bg/tires_1.png" class="object-fit-cover rounded-3" alt="Service image" loading="lazy">
+                                <img src="../assets/img/bg/shiny.jpg" class="object-fit-cover rounded-3" alt="Service image" loading="lazy">
                             </div>
 
                             <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
