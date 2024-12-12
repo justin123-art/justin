@@ -87,7 +87,7 @@
 			//instanciate model
 			$admin = new AdminModel();
 			
-			$deleteBooking = $admin->deleteBooking($_GET);
+			$deleteBooking = $admin-> deleteBooking($_GET);
 			
 			$bookingInfo = $admin->getBookingInfo();
 

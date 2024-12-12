@@ -37,8 +37,6 @@ include 'nav/header.php';
 	                    </div>
 						<a href=".php"><button type="button" class="btn btn-warning">Booking</button>
 					       </a>
-						   <a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
-					       </a>
 	                </div>
       				
       				<div class="col pt-5 pt-xl-4">
@@ -59,8 +57,6 @@ include 'nav/header.php';
 	                    </div>
 						<a href=".php"><button type="button" class="btn btn-warning">Booking</button>
 					       </a>
-						   <a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
-					       </a>
 	                </div>
 
 	                <div class="col pt-5 pt-xl-4">
@@ -80,8 +76,6 @@ include 'nav/header.php';
                             </p>
 	                    </div>
 						<a href=".php"><button type="button" class="btn btn-warning">Booking</button>
-					       </a>
-						   <a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
 					       </a>
 	                </div>
 	            </div>
