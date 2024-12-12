@@ -88,12 +88,12 @@
 			
 			//check if login success
 			if ($login){
-				if($login['user_type'] == 'admin'){
+				if($login['user_type'] == 'user'){
 
-					header('location:../page/admin_dashboard.php');
+					header('location:../page/home.php');
 				}else{
 					$_SESSION['loggedin'] = 'active';
-					header('location:../page/home.php');
+					header('location:../page/admin_dashboard.php');
 				}
 			}else{
 				$msg = "Invalid Username or Password!";

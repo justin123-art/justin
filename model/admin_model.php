@@ -86,7 +86,13 @@
 				//return
 				return $query->fetchAll(PDO::FETCH_ASSOC);
 			}
-				
+			function getproductInfo()
+			{
+				$query = "SELECT * FROM product_tb";
+				$stmt = $this->conn->prepare($query);
+				$stmt->execute();
+				return $stmt->fetchAll();
+			}
 		
 		
 		

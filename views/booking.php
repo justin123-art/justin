@@ -9,7 +9,7 @@
                     <tr>
                         <th>No.</th>
                         <th>CustomerName</th>
-                        <th></th>
+                        <th>Book_serv_id</th>
                         <th>Date</th>
                         <th>Status</th>
                         <th>Actions</th>

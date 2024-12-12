@@ -49,12 +49,12 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-receipt-cutoff"></i>Inventory</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="" class="nav-item nav-link" class="dropdown-item"><i class="fa fa-tag icon"></i>Product</a>
+                            <a href="admin_product.php" class="nav-item nav-link" class="dropdown-item"><i class="fa fa-tag icon"></i>Product</a>
                             <a href="" class="nav-item nav-link" class="dropdown-item">  <i class="fa fa-shopping-cart icon"></i>
                             Sales</a>
                         </div> 
                     </div>
-                    <a href="booking.php" class="nav-item nav-link"><i class="fa fa-calendar"></i>Bookings</a>
+                    <a href="admin_booking.php" class="nav-item nav-link"><i class="fa fa-calendar"></i>Bookings</a>
                     <a href="" class="nav-item nav-link"><i class="bi bi-chat-right-text-fill  me-2"></i>Feedback</a>
                     <a href="" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
                     </div>

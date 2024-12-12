@@ -137,7 +137,7 @@
 				
 							<button class="btn btn-outline-success <?= isset($_SESSION['loggedin'])? 'd-none': ''?>" type="submit">Login</button>
 						    </form>
-	                            <a href="logout.php" class="px-3 text-body-emphasis bg-body-secondary-hover border nav-link rounded-3 text-base leading-6 fw-semibold text-center  <?= !isset($_SESSION['loggedin'])? 'd-none': ''?>" type="submit" >
+	                            <a href="../views/login.php" class="px-3 text-body-emphasis bg-body-secondary-hover border nav-link rounded-3 text-base leading-6 fw-semibold text-center  <?= !isset($_SESSION['loggedin'])? 'd-none': ''?>" type="submit" >
 	                               Log Out 
 	                            </a>
 								

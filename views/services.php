@@ -35,7 +35,9 @@ include 'nav/header.php';
                                 We use a superior water-based silicone product that delivers a glistening shine while reducing any sling that ends up on the vehicle.
                             </p>
 	                    </div>
-						<a href="booking.php"><button type="button" class="btn btn-warning">Booking</button>
+						<a href=".php"><button type="button" class="btn btn-warning">Booking</button>
+					       </a>
+						   <a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
 					       </a>
 	                </div>
       				
@@ -55,7 +57,9 @@ include 'nav/header.php';
 								protection and long-lasting crystal-like shine.
                             </p>
 	                    </div>
-						<a href=""><button type="button" class="btn btn-warning">Booking</button>
+						<a href=".php"><button type="button" class="btn btn-warning">Booking</button>
+					       </a>
+						   <a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
 					       </a>
 	                </div>
 
@@ -75,10 +79,14 @@ include 'nav/header.php';
 							  water repellency    and help produce an extremely dry car.
                             </p>
 	                    </div>
-						<a href=""><button type="button" class="btn btn-warning">Booking</button>
+						<a href=".php"><button type="button" class="btn btn-warning">Booking</button>
+					       </a>
+						   <a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
 					       </a>
 	                </div>
 	            </div>
 	        </div>
 	    </div>      
-	</div>	
+	</div>
+
+	<!-- Add space between buttons

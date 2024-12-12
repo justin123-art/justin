@@ -49,10 +49,10 @@ include '../model/admin_model.php';
 			$admin = new AdminModel();
 			
 			//add province
-			$services = $admin->getService($_POST);
-			$User = $admin->getUser($_POST);
-			$feed = $admin->getFeeds($_POST);
-			$book = $admin->getBookings($_POST);
+			$services = $admin->getService();
+			$User = $admin->getUser();
+			$feed = $admin->getFeeds();
+			$book = $admin->getBookings();
 			$contactInfo = $admin->getContactInfo();
 
 			include '../views/admin_dashboard.php';

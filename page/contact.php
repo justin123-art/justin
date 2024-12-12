@@ -2,7 +2,7 @@
 	//import model
 include '../model/admin_model.php';
 	
-	include '../model/authenticationModel.php';
+	
 	$page_info['page'] = 'contact'; //for page that needs to be called
 	$page_info['sub_page'] = isset($_GET['sub_page'])? $_GET['sub_page'] : 'contact'; //for function to be loaded
 		
@@ -50,6 +50,7 @@ include '../model/admin_model.php';
 
 			include '../views/contact.php';
 		}
+		
 	}
 	
 ?>
