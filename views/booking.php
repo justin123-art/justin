@@ -16,7 +16,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($bookingInfo as $info) { ?>
+                    <?php foreach ($bookingInfo  as $info) { ?>
                         <tr>
                             <td><?= $info['book_id'] ?></td>
                             <td><?= $info['book_customername'] ?></td>
@@ -25,7 +25,7 @@
                             <td><?= $info['book_status'] ?></td>
                             <td>
                                 <a href="booking.php?function=editBooking&&sub_page=editBooking&&id=<?= $info['book_id'] ?>" class="btn btn-sm btn-primary">Edit</a>
-                                <a href="booking.php?function=deleteBooking&&sub_page=deleteBooking&&id=<?= $info['book_id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this booking?')">Delete</a>
+                                <a href="admin_booking.php?function=deleteBooking&&sub_page=deleteBooking&&id=<?= $info['book_id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this booking?')">Delete</a>
                             </td>
                         </tr>
                     <?php } ?>
