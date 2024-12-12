@@ -35,5 +35,6 @@
 			$stmt->bindParam(':password', $data['password']);
 			$stmt->execute();
 		}
+		
 	}
 ?>
