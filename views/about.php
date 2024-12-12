@@ -17,12 +17,12 @@ include 'nav/header.php';
       </p>
     </div>
     <div class="col-lg-6">
-      <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="img-fluid" alt="Car Wash Photo">
+      <img src="../assets/img/bg/carwash.jpg" class="img-fluid" alt="Car Wash Photo">
     </div>    
   </div>
 
 </div>
-
+     
 </section>
 
 <style>
