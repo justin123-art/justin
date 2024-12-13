@@ -51,6 +51,8 @@ include '../model/admin_model.php';
 			include '../views/admin_product.php';
 		}
 		
+		
 	}
+	
 	
 ?>

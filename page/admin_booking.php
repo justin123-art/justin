@@ -53,6 +53,7 @@
 
 			include '../views/booking.php';
 		}
+		
 	}
 
 	class bookingActive{
@@ -83,6 +84,19 @@
 			include '../views/booking.php';
 		}
 
+		function addbooking(){
+			// Instantiate model
+			$admin = new AdminModel();
+			
+			// Use POST data for adding booking
+			$addbooking = $admin->addbooking($_POST);
+			
+			// Retrieve booking info to show in the view
+			$bookingInfo = $admin->getBookingInfo();
+		
+			include '../views/booking.php';
+		}
+
 		function deleteBooking(){
 			//instanciate model
 			$admin = new AdminModel();
@@ -94,5 +108,6 @@
 			include '../views/booking.php';
 		}
 	}
+	
 	
 ?>

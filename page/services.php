@@ -1,7 +1,8 @@
 <?php
 	//import model
 	
-	include '../model/authenticationModel.php';
+	include_once '../model/admin_model.php';
+
 	$page_info['page'] = 'services'; //for page that needs to be called
 	$page_info['sub_page'] = isset($_GET['sub_page'])? $_GET['sub_page'] : 'services'; //for function to be loaded
 		
@@ -42,6 +43,9 @@
 		//-----------------------------//
 		//--   function start here   --//
 		function services(){
+			$admin = new AdminModel();
+	
+			$services = $admin->get_service();
 			include '../views/services.php';
 		}
 	}

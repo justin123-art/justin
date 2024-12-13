@@ -60,7 +60,7 @@ $current_page = basename($_SERVER['PHP_SELF']); // Get the currently running scr
             </div>
             <a href="admin_booking.php" class="nav-item nav-link <?php if($current_page == 'admin_booking.php') echo 'active'; ?>"><i class="fa fa-calendar"></i>Bookings</a>
             <a href="admin_feedback.php" class="nav-item nav-link <?php if($current_page == 'admin_feedback.php') echo 'active'; ?>"><i class="bi bi-chat-right-text-fill me-2"></i>Feedback</a>
-            <a href="admin_charts.php" class="nav-item nav-link <?php if($current_page == 'admin_charts.php') echo 'active'; ?>"><i class="fa fa-chart-bar me-2"></i>Charts</a>
+            <a href="admin_service.php" class="nav-item nav-link <?php if($current_page == 'admin_charts.php') echo 'active'; ?>"><i class="fa fa-chart-bar me-2"></i>Services</a>
         </div>
     </nav>
 </div>

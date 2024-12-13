@@ -24,7 +24,7 @@ include 'nav/header.php';
                                SHINY TIRES 
                             </h3>
 	                    </div>
-						<a href=".php"><button type="button" class="btn btn-warning">Buy Now</button>
+						<a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
 					       </a>
 	                </div>
       				
@@ -39,7 +39,7 @@ include 'nav/header.php';
                             </h3>
                             
 	                    </div>
-						<a href=".php"><button type="button" class="btn btn-warning">Buy Now</button>
+						<a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
 					       </a>
 	                </div>
 
@@ -53,7 +53,7 @@ include 'nav/header.php';
                                PRIME DRY
                             </h3>
 	                    </div>
-						<a href=".php"><button type="button" class="btn btn-warning">Buy Now</button>
+						<a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
 					       </a>
 	                </div>
                     <div class="col pt-5 pt-xl-4">
@@ -66,7 +66,7 @@ include 'nav/header.php';
                                PRIME DRY
                             </h3>
 	                    </div>
-						<a href=".php"><button type="button" class="btn btn-warning">Buy Now</button>
+						<a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
 					       </a>
 	                </div>
                     <div class="col pt-5 pt-xl-4">
@@ -79,7 +79,7 @@ include 'nav/header.php';
                                PRIME DRY
                             </h3>
 	                    </div>
-						<a href=".php"><button type="button" class="btn btn-warning">Buy Now</button>
+						<a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
 					       </a>
 	                </div>
                     <div class="col pt-5 pt-xl-4">
@@ -92,7 +92,7 @@ include 'nav/header.php';
                                PRIME DRY
                             </h3>
 	                    </div>
-						<a href=".php"><button type="button" class="btn btn-warning">Buy Now</button>
+						<a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
 					       </a>
 	                </div>
 	            </div>
