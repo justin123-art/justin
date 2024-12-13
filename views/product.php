@@ -17,11 +17,11 @@ include 'nav/header.php';
 	                <div class="col pt-5 pt-xl-4">
 	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="0" data-aos="fade" data-aos-duration="1000">
                         	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                                <img src="../assets/img/bg/shiny.jpg" class="object-fit-cover rounded-3" alt="Service image" loading="lazy">
+                                <img src="../assets/img/bg/wax3.jpg" class="object-fit-cover rounded-3" alt="Service image" loading="lazy">
                             </div>
 
                             <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
-                               SHINY TIRES 
+                               WHITE CAR WAX	
                             </h3>
 	                    </div>
 						<a href=".php"><button type="button" class="btn btn-warning">Buy Now</button>
@@ -31,11 +31,11 @@ include 'nav/header.php';
       				<div class="col pt-5 pt-xl-4">
 	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="100" data-aos="fade" data-aos-duration="1000">
                         	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                                <img src="../assets/img/bg/wax_1.png" class="object-fit-cover rounded-3" alt="Service image" loading="lazy">
+                                <img src="../assets/img/bg/cleaner.jpg" class="object-fit-cover rounded-3" alt="Service image" loading="lazy">
                             </div>
 
                             <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
-                              GO WAX
+                              CAR GLASS CLEANER
                             </h3>
                             
 	                    </div>
@@ -46,11 +46,11 @@ include 'nav/header.php';
 	                <div class="col pt-5 pt-xl-4">
 	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="200" data-aos="fade" data-aos-duration="1000">
                         	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                                <img src="../assets/img/bg/dry_1.png" class="object-fit-cover rounded-3" alt="Service image" loading="lazy" class="center">
+                                <img src="../assets/img/bg/shine.jpg" class="object-fit-cover rounded-3" alt="Service image" loading="lazy" class="center">
                             </div>
 
                             <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
-                               PRIME DRY
+                              CAR TIRE SHINE
                             </h3>
 	                    </div>
 						<a href=".php"><button type="button" class="btn btn-warning">Buy Now</button>
@@ -59,11 +59,11 @@ include 'nav/header.php';
                     <div class="col pt-5 pt-xl-4">
 	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="200" data-aos="fade" data-aos-duration="1000">
                         	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                                <img src="../assets/img/bg/dry_1.png" class="object-fit-cover rounded-3" alt="Service image" loading="lazy" class="center">
+                                <img src="../assets/img/bg/engine.jpg" class="object-fit-cover rounded-3" alt="Service image" loading="lazy" class="center">
                             </div>
 
                             <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
-                               PRIME DRY
+                               CAR ENGINE CLEANER
                             </h3>
 	                    </div>
 						<a href=".php"><button type="button" class="btn btn-warning">Buy Now</button>
@@ -72,11 +72,11 @@ include 'nav/header.php';
                     <div class="col pt-5 pt-xl-4">
 	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="200" data-aos="fade" data-aos-duration="1000">
                         	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                                <img src="../assets/img/bg/dry_1.png" class="object-fit-cover rounded-3" alt="Service image" loading="lazy" class="center">
+                                <img src="../assets/img/bg/carwash1.jpg" class="object-fit-cover rounded-3" alt="Service image" loading="lazy" class="center">
                             </div>
 
                             <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
-                               PRIME DRY
+                               CARWASH SOAPS
                             </h3>
 	                    </div>
 						<a href=".php"><button type="button" class="btn btn-warning">Buy Now</button>
@@ -85,11 +85,11 @@ include 'nav/header.php';
                     <div class="col pt-5 pt-xl-4">
 	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="200" data-aos="fade" data-aos-duration="1000">
                         	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                                <img src="../assets/img/bg/dry_1.png" class="object-fit-cover rounded-3" alt="Service image" loading="lazy" class="center">
+                                <img src="../assets/img/bg/towel.jpg" class="object-fit-cover rounded-3" alt="Service image" loading="lazy" class="center">
                             </div>
 
                             <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
-                               PRIME DRY
+                              TOWEL AND MITTS
                             </h3>
 	                    </div>
 						<a href=".php"><button type="button" class="btn btn-warning">Buy Now</button>
