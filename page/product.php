@@ -1,8 +1,7 @@
 <?php
 	//import model
-include '../model/admin_model.php';
 	
-	
+	include '../model/authenticationModel.php';
 	$page_info['page'] = 'product'; //for page that needs to be called
 	$page_info['sub_page'] = isset($_GET['sub_page'])? $_GET['sub_page'] : 'product'; //for function to be loaded
 		
@@ -14,7 +13,7 @@ include '../model/admin_model.php';
 		//check for active function
 		
 		//no active function, use the default page to view
-		new product($page_info);
+		new product ($page_info);
 		
 	}catch (Throwable $e){ //get the encountered error
 		echo '<h1>ERROR 404</h1>';
@@ -43,14 +42,7 @@ include '../model/admin_model.php';
 		//-----------------------------//
 		//--   function start here   --//
 		function product(){
-			//instanciate model
-			$admin = new AdminModel();
-			
-			$productInfo = $admin->getproductInfo();
-
-			include '../views/admin_product.php';
+			include '../views/product.php';
 		}
-		
 	}
-	
 ?>

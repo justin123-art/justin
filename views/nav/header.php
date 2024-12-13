@@ -126,6 +126,12 @@
 	                                About
 	                            </a>
 	                        </li>
+							
+	                        <li class="nav-item">
+	                            <a href="product.php" class="px-3 text-body-emphasis bg-body-secondary-hover nav-link rounded-3 text-base leading-6 fw-semibold">
+	                               Product
+	                            </a>
+	                        </li>
 
 							<li class="nav-item">
 	                            <a href="contact.php" class="px-3 text-body-emphasis bg-body-secondary-hover nav-link rounded-3 text-base leading-6 fw-semibold">

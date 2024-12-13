@@ -1,38 +1,103 @@
 <?php
-            include 'nav/sidebar.php';
-            include 'nav/topnav.php'; ?>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
+include 'nav/header.php';
+?>
 
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-        }
+<!-- services -->
+<div class="overflow-hidden py-7 py-sm-8 py-xl-9 bg-body-tertiary">
+	    <div class="container">
+	        <div>
+	            <div class="mx-auto max-w-2xl text-center">
+					<h2 class="m-0 text-primary-emphasis text-base leading-7 fw-semibold">
+						Our Product
+					</h2>
+	            </div>
+	        </div>
+	        <div>
+	            <div class="row row-cols-1 row-cols-xl-3 gy-5 gx-xl-4 mt-1 justify-content-center justify-content-xl-between">
+	                <div class="col pt-5 pt-xl-4">
+	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="0" data-aos="fade" data-aos-duration="1000">
+                        	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
+                                <img src="../assets/img/bg/shiny.jpg" class="object-fit-cover rounded-3" alt="Service image" loading="lazy">
+                            </div>
 
-        th {
-            background-color: #f0f0f0;
-        }
-    </style>
-</head>
-<body>
+                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
+                               SHINY TIRES 
+                            </h3>
+	                    </div>
+						<a href=".php"><button type="button" class="btn btn-warning">Buy Now</button>
+					       </a>
+	                </div>
+      				
+      				<div class="col pt-5 pt-xl-4">
+	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="100" data-aos="fade" data-aos-duration="1000">
+                        	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
+                                <img src="../assets/img/bg/wax_1.png" class="object-fit-cover rounded-3" alt="Service image" loading="lazy">
+                            </div>
 
-    <table>
-        <tr>
-            <th>Product Name</th>
-            <th>Product Price</th>
-            <th>Date</th>
-        </tr>
-        <?php foreach ($productInfo as $product) { ?>
-            <tr>
-                <td><?php echo $product['prod_name']; ?></td>
-                <td><?php echo $product['prod_price']; ?></td>
-                <td><?php echo $product['prod_date']; ?></td>
-            </tr>
-        <?php } ?>
-    </table>
-</body>
-</html>
+                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
+                              GO WAX
+                            </h3>
+                            
+	                    </div>
+						<a href=".php"><button type="button" class="btn btn-warning">Buy Now</button>
+					       </a>
+	                </div>
+
+	                <div class="col pt-5 pt-xl-4">
+	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="200" data-aos="fade" data-aos-duration="1000">
+                        	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
+                                <img src="../assets/img/bg/dry_1.png" class="object-fit-cover rounded-3" alt="Service image" loading="lazy" class="center">
+                            </div>
+
+                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
+                               PRIME DRY
+                            </h3>
+	                    </div>
+						<a href=".php"><button type="button" class="btn btn-warning">Buy Now</button>
+					       </a>
+	                </div>
+                    <div class="col pt-5 pt-xl-4">
+	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="200" data-aos="fade" data-aos-duration="1000">
+                        	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
+                                <img src="../assets/img/bg/dry_1.png" class="object-fit-cover rounded-3" alt="Service image" loading="lazy" class="center">
+                            </div>
+
+                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
+                               PRIME DRY
+                            </h3>
+	                    </div>
+						<a href=".php"><button type="button" class="btn btn-warning">Buy Now</button>
+					       </a>
+	                </div>
+                    <div class="col pt-5 pt-xl-4">
+	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="200" data-aos="fade" data-aos-duration="1000">
+                        	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
+                                <img src="../assets/img/bg/dry_1.png" class="object-fit-cover rounded-3" alt="Service image" loading="lazy" class="center">
+                            </div>
+
+                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
+                               PRIME DRY
+                            </h3>
+	                    </div>
+						<a href=".php"><button type="button" class="btn btn-warning">Buy Now</button>
+					       </a>
+	                </div>
+                    <div class="col pt-5 pt-xl-4">
+	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="200" data-aos="fade" data-aos-duration="1000">
+                        	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
+                                <img src="../assets/img/bg/dry_1.png" class="object-fit-cover rounded-3" alt="Service image" loading="lazy" class="center">
+                            </div>
+
+                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
+                               PRIME DRY
+                            </h3>
+	                    </div>
+						<a href=".php"><button type="button" class="btn btn-warning">Buy Now</button>
+					       </a>
+	                </div>
+	            </div>
+	        </div>
+	    </div>      
+	</div>
+
+	<!-- Add space between buttons
