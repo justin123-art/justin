@@ -12,7 +12,7 @@
                             <i class="bi bi-person-circle fa-2x text-primary"></i>
                             <div class="ms-3">
                                 <p class="mb-2">User</p>
-                                <h6 class="mb-0"></h6>
+                                <h6 class="mb-0"><?= count($User) ?></h6>
                             </div>
                         </div>
                     </div>

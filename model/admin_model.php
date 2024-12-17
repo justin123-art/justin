@@ -173,6 +173,70 @@
 				}
 
 		}
+		function add_product($product, $file){
+			//image location
+		$target_dir = "../images/product/";
+		$target_file = $target_dir . basename($file["image"]["name"]);
+		$filename = basename($file["image"]["name"]);
+		
+		$imageFileType = ['jpg','jpeg','png','svg','gif','webp'];
+		
+		//check te file if it is an image
+		$extension = pathinfo($file["image"]["name"], PATHINFO_EXTENSION);
+		
+		//check if the image is on the list of images formats
+		if (in_array($extension,$imageFileType)){
+			
+			//upload the correct image
+			if (move_uploaded_file($file["image"]["tmp_name"], $target_file)) {
+				//pre sql statement
+				$sql = "INSERT INTO `product_tb`(`prod_name`,`prod_price`,`prod_id`,`prod_img`) VALUES (?, ?, ?, ?)";
+
+				$query = $this->conn->prepare($sql);
+	
+				$query->bindParam(1, $product['name']);
+				$query->bindParam(2,$filename);
+				$query->bindParam(3, $product['id']);
+				$query->bindParam(4, $product['prices']);
+	
+				$query->execute();
+				
+			}
+			else{
+				?>
+					<script>alert('There was an error on file upload!');</script>
+					<script>window.history.back(-1);</script>
+				<?php
+			}
+		}else{
+			?>
+				<script>alert('Invalid File Format.\r\nFormat: jpg,jpeg,png,svg,gif extention:'<?= $extension ?>);</script>
+				<script>window.history.back(-1);</script>
+			<?php
+		}
+		
+   
+	}
+	function product_delete($product_delete){
+		$sql = "DELETE FROM `product_tb` WHERE `prod_id` = ?";
+		$query = $this->conn->prepare($sql);
+		$query->bindParam(1, $product_delete['prod_id']);
+		$query->execute();
+		$query->fetchAll(PDO::FETCH_ASSOC);
+	}
+	
+
+	function get_product(){
+		$sql = "SELECT * FROM `product_tb` ";
+		//prepare query
+		$query = $this->conn->prepare($sql);
+		
+		//execute query
+		$query->execute();
+		//return
+		return $query->fetchAll(PDO::FETCH_ASSOC);
+	}
+
 	}
     
 

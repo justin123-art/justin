@@ -13,91 +13,25 @@ include 'nav/header.php';
 	            </div>
 	        </div>
 	        <div>
-	            <div class="row row-cols-1 row-cols-xl-3 gy-5 gx-xl-4 mt-1 justify-content-center justify-content-xl-between">
-	                <div class="col pt-5 pt-xl-4">
-	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="0" data-aos="fade" data-aos-duration="1000">
-                        	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                                <img src="../assets/img/bg/wax3.jpg" class="object-fit-cover rounded-3" alt="Service image" loading="lazy">
-                            </div>
-
-                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
-                               WHITE CAR WAX	
-                            </h3>
-	                    </div>
-						<a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
-					       </a>
-	                </div>
+			<div class="row row-cols-1 row-cols-xl-3 gy-5 gx-xl-4 mt-1 justify-content-center justify-content-xl-between">
+    <?php foreach ($product as $prod) { ?>
+        <div class="col pt-5 pt-xl-4">
+            <div class="card h-100" data-aos="fade" data-aos-delay="0" data-aos-duration="1000">
+                <div class="ratio" style="--bs-aspect-ratio: 66.66%;">
+                    <img src="../images/product/<?= htmlspecialchars($prod['prod_img']) ?>" class="object-fit-cover rounded-3" alt="<?= htmlspecialchars($prod['prod_name']) ?>" loading="lazy">
+                </div>
+                <div class="card-body text-center">
+                    <h3 class="m-0 mt-3 text-warning fw-semibold"><?= htmlspecialchars($prod['prod_name']) ?></h3>
+                    <h4 class="m-0 mt-2 text-danger fw-semibold">$ <?= htmlspecialchars($prod['prod_price']) ?></h4> 
+                    <div class="booking-button-container mt-3">
+                        <button type="button" class="btn btn-warning booking-button" data-bs-toggle="modal" data-bs-target="#shinyTiresModal">
+                            Booking
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Service Item -->
+    <?php } ?>
+</div>
       				
-      				<div class="col pt-5 pt-xl-4">
-	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="100" data-aos="fade" data-aos-duration="1000">
-                        	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                                <img src="../assets/img/bg/cleaner.jpg" class="object-fit-cover rounded-3" alt="Service image" loading="lazy">
-                            </div>
-
-                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
-                              CAR GLASS CLEANER
-                            </h3>
-                            
-	                    </div>
-						<a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
-					       </a>
-	                </div>
-
-	                <div class="col pt-5 pt-xl-4">
-	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="200" data-aos="fade" data-aos-duration="1000">
-                        	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                                <img src="../assets/img/bg/shine.jpg" class="object-fit-cover rounded-3" alt="Service image" loading="lazy" class="center">
-                            </div>
-
-                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
-                              CAR TIRE SHINE
-                            </h3>
-	                    </div>
-						<a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
-					       </a>
-	                </div>
-                    <div class="col pt-5 pt-xl-4">
-	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="200" data-aos="fade" data-aos-duration="1000">
-                        	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                                <img src="../assets/img/bg/engine.jpg" class="object-fit-cover rounded-3" alt="Service image" loading="lazy" class="center">
-                            </div>
-
-                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
-                               CAR ENGINE CLEANER
-                            </h3>
-	                    </div>
-						<a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
-					       </a>
-	                </div>
-                    <div class="col pt-5 pt-xl-4">
-	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="200" data-aos="fade" data-aos-duration="1000">
-                        	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                                <img src="../assets/img/bg/carwash1.jpg" class="object-fit-cover rounded-3" alt="Service image" loading="lazy" class="center">
-                            </div>
-
-                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
-                               CARWASH SOAPS
-                            </h3>
-	                    </div>
-						<a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
-					       </a>
-	                </div>
-                    <div class="col pt-5 pt-xl-4">
-	                    <div class="max-w-xl mx-auto mx-xl-0" data-aos-delay="200" data-aos="fade" data-aos-duration="1000">
-                        	<div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                                <img src="../assets/img/bg/towel.jpg" class="object-fit-cover rounded-3" alt="Service image" loading="lazy" class="center">
-                            </div>
-
-                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">
-                              TOWEL AND MITTS
-                            </h3>
-	                    </div>
-						<a href=".php"><button type="button" class="btn btn-success">Buy Now</button>
-					       </a>
-	                </div>
-	            </div>
-	        </div>
-	    </div>      
-	</div>
-
-	<!-- Add space between buttons
+      				

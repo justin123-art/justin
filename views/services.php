@@ -19,118 +19,27 @@ include 'nav/header.php';
                 </p>
             </div>
         </div>
-
-        <!-- Service Cards -->
-        <div>
-            <div class="row row-cols-1 row-cols-xl-3 gy-5 gx-xl-4 mt-1 justify-content-center justify-content-xl-between">
-                
-                <!-- Shiny Tires Service -->
-                <div class="col pt-5 pt-xl-4">
-                    <div class="max-w-xl mx-auto mx-xl-0">
-                        <div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                            <img src="../assets/img/bg/shiny.jpg" class="object-fit-cover rounded-3" alt="Shiny Tires Service" loading="lazy">
-                        </div>
-                        <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">SHINY TIRES</h3>
-                        <p class="m-0 mt-3 text-body-secondary line-clamp-2 text-sm leading-6">
-                            We use a superior water-based silicone product that delivers a glistening shine while reducing any sling that ends up on the vehicle.
-                        </p>
-                    </div>
-                    <!-- Booking Button for Shiny Tires -->
-                    <button type="button" class="btn btn-warning booking-button" data-bs-toggle="modal" data-bs-target="#shinyTiresModal">
-                        Booking
-                    </button>
+        <div class="row row-cols-1 row-cols-xl-3 gy-5 gx-xl-4 mt-1 justify-content-center justify-content-xl-between">
+    <?php foreach ($services as $srvc) { ?>
+        <div class="col pt-5 pt-xl-4">
+            <div class="card h-100" data-aos="fade" data-aos-delay="0" data-aos-duration="1000">
+                <div class="ratio" style="--bs-aspect-ratio: 66.66%;">
+                    <img src="../images/<?= htmlspecialchars($srvc['serv_img']) ?>" class="object-fit-cover rounded-3" alt="<?= htmlspecialchars($srvc['serv_name']) ?>" loading="lazy">
                 </div>
-
-                <!-- Go Wax Service -->
-                <div class="col pt-5 pt-xl-4">
-                    <div class="max-w-xl mx-auto mx-xl-0">
-                        <div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                            <img src="../assets/img/bg/wax.jpg" class="object-fit-cover rounded-3" alt="Go Wax Service" loading="lazy">
-                        </div>
-                        <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">GO WAX</h3>
-                        <p class="m-0 mt-3 text-body-secondary line-clamp-2 text-sm leading-6">
-                            Go Wax is made up of special formulated polymers. These fill the microscopic pores in the car's paints and glass to provide advanced protection and long-lasting crystal-like shine.
-                        </p>
+                <div class="card-body text-center">
+                    <h3 class="m-0 mt-3 text-warning fw-semibold"><?= htmlspecialchars($srvc['serv_name']) ?></h3>
+                    <h4 class="m-0 mt-2 text-danger fw-semibold">$ <?= htmlspecialchars($srvc['serv_price']) ?></h4> 
+                    <p class="description mt-2"><?= htmlspecialchars($srvc['serv_desc']) ?></p>
+                    <div class="booking-button-container mt-3">
+                        <button type="button" class="btn btn-warning booking-button" data-bs-toggle="modal" data-bs-target="#shinyTiresModal">
+                            Booking
+                        </button>
                     </div>
-                    <!-- Booking Button for Go Wax -->
-                    <button type="button" class="btn btn-warning booking-button" data-bs-toggle="modal" data-bs-target="#goWaxModal">
-                        Booking
-                    </button>
                 </div>
-
-                <!-- Prime Dry Service -->
-                <div class="col pt-5 pt-xl-4">
-                    <div class="max-w-xl mx-auto mx-xl-0">
-                        <div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                            <img src="../assets/img/bg/dry.jpg" class="object-fit-cover rounded-3" alt="Prime Dry Service" loading="lazy">
-                        </div>
-                        <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">PRIME DRY</h3>
-                        <p class="m-0 mt-3 text-body-secondary line-clamp-2 text-sm leading-6">
-                            A low pH foam that helps prep the surface of the vehicle to aid in the beading and grouping of water molecules to promote water repellency and help produce an extremely dry car.
-                        </p>
-                    </div>
-                    <!-- Booking Button for Prime Dry -->
-                    <button type="button" class="btn btn-warning booking-button" data-bs-toggle="modal" data-bs-target="#primeDryModal">
-                        Booking
-                    </button>
-                </div>
-
-                <!-- Go Bath Service -->
-                <div class="col pt-5 pt-xl-4">
-                    <div class="max-w-xl mx-auto mx-xl-0">
-                        <div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                            <img src="../assets/img/bg/carwash2.jpg" class="object-fit-cover rounded-3" alt="Go Bath Service" loading="lazy">
-                        </div>
-                        <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">GO BATH</h3>
-                        <p class="m-0 mt-3 text-body-secondary line-clamp-2 text-sm leading-6">
-                            Speed and Convenience: The service is quick, so you don't have to wait long to have your car cleaned.
-                        </p>
-                    </div>
-                    <!-- Booking Button for Go Bath -->
-                    <button type="button" class="btn btn-warning booking-button" data-bs-toggle="modal" data-bs-target="#goBathModal">
-                        Booking
-                    </button>
-                </div>
-
-                <!-- Triple Foam Service -->
-                <div class="col pt-5 pt-xl-4">
-                    <div class="max-w-xl mx-auto mx-xl-0">
-                        <div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                            <img src="../assets/img/bg/foam.jpg" class="object-fit-cover rounded-3" alt="Triple Foam Service" loading="lazy">
-                        </div>
-                        <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">TRIPLE FOAM</h3>
-                        <p class="m-0 mt-3 text-body-secondary line-clamp-2 text-sm leading-6">
-                            A Triple Foam Car Wash is a specialized, multi-step car wash process that uses three different types of foam to thoroughly clean, protect, and shine your vehicle.
-                        </p>
-                    </div>
-                    <!-- Booking Button for Triple Foam -->
-                    <button type="button" class="btn btn-warning booking-button" data-bs-toggle="modal" data-bs-target="#tripleFoamModal">
-                        Booking
-                    </button>
-                </div>
-
-                <!-- Ceramic Shield Service -->
-                <div class="col pt-5 pt-xl-4">
-                    <div class="max-w-xl mx-auto mx-xl-0">
-                        <div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                            <img src="../assets/img/bg/ceramic.jpg" class="object-fit-cover rounded-3" alt="Ceramic Shield Service" loading="lazy">
-                        </div>
-                        <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold">CERAMIC SHIELD</h3>
-                        <p class="m-0 mt-3 text-body-secondary line-clamp-2 text-sm leading-6">
-                            A Ceramic Shield Car Wash refers to a car wash service that includes the application of a ceramic coating or ceramic protection.
-                        </p>
-                    </div>
-                    <!-- Booking Button for Ceramic Shield -->
-                    <button type="button" class="btn btn-warning booking-button" data-bs-toggle="modal" data-bs-target="#ceramicShieldModal">
-                        Booking
-                    </button>
-                </div>
-
             </div>
-        </div>
-    </div>      
-</div>      
-
+        </div><!-- End Service Item -->
+    <?php } ?>
+</div>
 <!-- Modals -->
 <!-- Shiny Tires Modal -->
 <div class="modal fade" id="shinyTiresModal" tabindex="-1" aria-labelledby="shinyTiresModalLabel" aria-hidden="true">
