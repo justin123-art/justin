@@ -52,12 +52,10 @@ $current_page = basename($_SERVER['PHP_SELF']); // Get the currently running scr
         <div class="navbar-nav w-100">
             <a href="admin_dashboard.php" class="nav-item nav-link <?php if($current_page == 'admin_dashboard.php') echo 'active'; ?>"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
             <div class="nav-item dropdown <?php if($current_page == 'admin_product.php' || $current_page == 'admin_sales.php') echo 'active'; ?>">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-receipt-cutoff"></i>Inventory</a>
-                <div class="dropdown-menu bg-transparent border-0">
-                    <a href="admin_product.php" class="nav-item nav-link <?php if($current_page == 'admin_product.php') echo 'active'; ?>"><i class="fa fa-tag icon"></i>Product</a>
-                    <a href="admin_sales.php" class="nav-item nav-link <?php if($current_page == 'admin_sales.php') echo 'active'; ?>"><i class="fa fa-shopping-cart icon"></i>Sales</a>
-                </div> 
-            </div>
+                <a href="#"  class="nav-item nav-link <?php if($current_page == '') echo 'active'; ?>"><i class="bi bi-receipt-cutoff"></i>Inventory</a>
+              
+            <a href="admin_product.php" class="nav-item nav-link <?php if($current_page == 'admin_product.php') echo 'active'; ?>"><i class="fa fa-tag icon"></i>Product</a>
+            <a href="admin_sales.php" class="nav-item nav-link <?php if($current_page == 'admin_sales.php') echo 'active'; ?>"><i class="fa fa-shopping-cart icon"></i>Sales</a>
             <a href="admin_booking.php" class="nav-item nav-link <?php if($current_page == 'admin_booking.php') echo 'active'; ?>"><i class="fa fa-calendar"></i>Bookings</a>
             <a href="admin_feedback.php" class="nav-item nav-link <?php if($current_page == 'admin_feedback.php') echo 'active'; ?>"><i class="bi bi-chat-right-text-fill me-2"></i>Feedback</a>
             <a href="admin_service.php" class="nav-item nav-link <?php if($current_page == 'admin_charts.php') echo 'active'; ?>"><i class="fa fa-chart-bar me-2"></i>Services</a>

@@ -50,15 +50,19 @@ include 'nav/header.php';
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="admin_booking.php?" method="post">
+                <form action="admin_booking.php?function=bookingActive&sub_page=addBooking" method="post">
                     <input type="hidden" name="service_id" value="shiny_tires">
                     <div class="mb-3">
-                        <label for="customerName1" class="form-label">Customer Name</label>
+                        <label for="customerName1" class="form-label">Name</label>
                         <input type="text" class="form-control" id="customerName1" name="book_customer" required>
                     </div>
                     <div class="mb-3">
                         <label for="date1" class="form-label">Date</label>
                         <input type="date" class="form-control" id="date1" name="book_date" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="time1" class="form-label">Time</label>
+                        <input type="time" class="form-control" id="time1" name="book_time" required>
                     </div>
                     <div class="mb-3">
                         <label for="status1" class="form-label">Status</label>
@@ -87,8 +91,8 @@ include 'nav/header.php';
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="admin_booking.php?" method="post">
-                    <input type="hidden" name="service_id" value="shiny_tires">
+                <form action="admin_booking.php?function=addbooking" method="post"> <!-- Updated action -->
+                    <input type="hidden" name="service_id" value="go_wax"> <!-- Updated service ID -->
                     <div class="mb-3">
                         <label for="customerName1" class="form-label">Customer Name</label>
                         <input type="text" class="form-control" id="customerName1" name="book_customer" required>
@@ -114,44 +118,6 @@ include 'nav/header.php';
         </div>
     </div>
 </div>
-
-<!-- Prime Dry Modal -->
-<div class="modal fade" id="primeDryModal" tabindex="-1" aria-labelledby="primeDryModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="primeDryModalLabel">Booking Prime Dry  Service</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form action="admin_booking.php?" method="post">
-                    <input type="hidden" name="service_id" value="shiny_tires">
-                    <div class="mb-3">
-                        <label for="customerName1" class="form-label">Customer Name</label>
-                        <input type="text" class="form-control" id="customerName1" name="book_customer" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="date1" class="form-label">Date</label>
-                        <input type="date" class="form-control" id="date1" name="book_date" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="status1" class="form-label">Status</label>
-                        <select class="form-select" id="status1" name="book_status" required>
-                            <option value="">Select Status</option>
-                            <option value="pending">Pending</option>
-                            <option value="confirmed">Confirmed</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Book Now</button>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- Go Bath Modal -->
 <div class="modal fade" id="goBathModal" tabindex="-1" aria-labelledby="goBathModalLabel" aria-hidden="true">
     <div class="modal-dialog">

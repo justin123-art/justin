@@ -190,14 +190,14 @@
 			//upload the correct image
 			if (move_uploaded_file($file["image"]["tmp_name"], $target_file)) {
 				//pre sql statement
-				$sql = "INSERT INTO `product_tb`(`prod_name`,`prod_price`,`prod_id`,`prod_img`) VALUES (?, ?, ?, ?)";
+				$sql = "INSERT INTO `product_tb`(`prod_name`,`prod_price`,`prod_date`,`prod_img`) VALUES (?, ?, ?, ?)";
 
 				$query = $this->conn->prepare($sql);
 	
 				$query->bindParam(1, $product['name']);
-				$query->bindParam(2,$filename);
-				$query->bindParam(3, $product['id']);
-				$query->bindParam(4, $product['prices']);
+				$query->bindParam(2, $product['prices']);
+				$query->bindParam(3, $product['date']);
+				$query->bindParam(4, $filename);
 	
 				$query->execute();
 				
@@ -225,6 +225,21 @@
 		$query->fetchAll(PDO::FETCH_ASSOC);
 	}
 	
+	function product_update(){
+		try{
+			$query = "UPDATE `product_tb` SET `product_name` = '{$_POST['prod_name']}', `prod_date` = '{$_POST['prod_date']}' WHERE `prod_id` = '{$_POST['prod_id']}'";
+
+			$stmt = $this->conn->prepare($query);
+
+			$stmt->execute();
+
+			return true;
+			} catch(Throwable $e){
+				$e->getMessage();
+				return false;
+			}
+
+	}
 
 	function get_product(){
 		$sql = "SELECT * FROM `product_tb` ";
@@ -238,7 +253,39 @@
 	}
 
 	}
-    
+	function addBooking($booking) {
+        // Prepare the SQL insert statement
+        $sql = "INSERT INTO booking_tb (book_customername, book_serv_id, book_date, book_time, book_status) VALUES (?, ?, ?, ?, ?)";
+        $query = $this->conn->prepare($sql);
+
+        // Bind parameters
+        $query->bindParam(1, $booking['book_customername']);
+        $query->bindParam(2, $booking['book_serv_id']);
+        $query->bindParam(3, $booking['book_date']);
+        $query->bindParam(4, $booking['book_time']);
+        $query->bindParam(5, $booking['book_status']);
+
+        // Execute the query
+        return $query->execute();
+    }
+
+    function editBooking($booking) {
+        // Prepare the SQL update statement
+        $sql = "UPDATE booking_tb SET book_customername = ?, book_serv_id = ?, book_date = ?, book_time = ?, book_status = ? WHERE book_id = ?";
+        $query = $this->conn->prepare($sql);
+
+        // Bind parameters
+        $query->bindParam(1, $booking['book_customername']);
+        $query->bindParam(2, $booking['book_serv_id']);
+        $query->bindParam(3, $booking['book_date']);
+        $query->bindParam(4, $booking['book_time']);
+        $query->bindParam(5, $booking['book_status']);
+        $query->bindParam(6, $booking['book_id']); // Assuming 'book_id' is passed to update the specific booking record
+
+        // Execute the query
+        return $query->execute();
+    }
+
 
 		
 ?>

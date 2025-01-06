@@ -23,13 +23,14 @@ include 'nav/header.php';
                 <div class="card-body text-center">
                     <h3 class="m-0 mt-3 text-warning fw-semibold"><?= htmlspecialchars($prod['prod_name']) ?></h3>
                     <h4 class="m-0 mt-2 text-danger fw-semibold">$ <?= htmlspecialchars($prod['prod_price']) ?></h4> 
-                    <div class="booking-button-container mt-3">
-                        <button type="button" class="btn btn-warning booking-button" data-bs-toggle="modal" data-bs-target="#shinyTiresModal">
-                            Booking
-                        </button>
-                    </div>
+                   
                 </div>
             </div>
+            <div class="booking-button-container mt-3">
+                        <button type="button" class="btn btn-warning booking-button" data-bs-toggle="modal" data-bs-target="#shinyTiresModal">
+                          Buy Now 
+                        </button>
+                    </div>
         </div><!-- End Service Item -->
     <?php } ?>
 </div>

@@ -84,13 +84,13 @@
 			include '../views/booking.php';
 		}
 
-		function addbooking(){
-			// Instantiate model
+		function addbooking() {
+    // Instantiate model
 			$admin = new AdminModel();
 			
 			// Use POST data for adding booking
-			$addbooking = $admin->addbooking($_POST);
-			
+			$addbooking = $admin->addBooking($_POST); // Correct method name
+
 			// Retrieve booking info to show in the view
 			$bookingInfo = $admin->getBookingInfo();
 		

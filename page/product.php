@@ -1,5 +1,6 @@
 <?php
 	//import model
+include '../model/admin_model.php';
 	
 	include '../model/authenticationModel.php';
 	$page_info['page'] = 'product'; //for page that needs to be called
@@ -42,6 +43,9 @@
 		//-----------------------------//
 		//--   function start here   --//
 		function product(){
+				$admin = new AdminModel();
+	
+				$product = $admin->get_product();
 			include '../views/product.php';
 		}
 	}

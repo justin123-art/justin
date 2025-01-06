@@ -78,14 +78,15 @@
                                 <td style="text-align:center">
                                     <img src="../images/product/<?= $prod['prod_img'] ?>" width="50px" height="50px" />
                                 </td>
-                                <td style="text-align:center"><?=$prod['prod_date'] ?></td>
                                 <td style="text-align:center"><?= $prod['prod_price'] ?></td>
+                                <td style="text-align:center"><?=$prod['prod_date'] ?></td>
+                              
                                 <td style="text-align:center">
                                     <a class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#edit<?=$prod['prod_id'] ?>">Edit</a>  
                                     <a class="btn btn-sm btn-warning" href="../page/admin_product.php?sub_page=product_delete&&function=product_delete&&prod_id=<?=$prod['prod_id'] ?>">Delete</a>
                                 </td>
                             </tr>
-
+ 
                             <!-- Edit Modal -->
                             <form action="../page/admin_product.php?function=updateprod&&sub_page=updateprod" method="post">    
                                 <input type="hidden" name="prod_id" value="<?= $prod['prod_id'] ?>"> 
@@ -96,10 +97,10 @@
                                                 <h5 class="modal-title" id="editLabel<?=$prod['prod_id'] ?>">Edit Service</h5>
                                             </div>
                                             <div class="modal-body">
-                                                <label for="service_name">Service Name:</label>
+                                                <label for="service_name">Product Name:</label>
                                                 <input type="text" name="service_name" class="form-control" value="<?= $prod['prod_name'] ?>"><br>
-                                                <label for="service_desc">Service Description:</label><br>
-                                                < name="service_desc" class="form-control"><?= $prod['prod_date'] ?></textarea><br>
+                                                <label for="service_name">Date:</label>
+                                                <input type="date" name="date" class="form-control" value="<?= $prod['prod_date'] ?>"><br>
                                                 <label for="service_price">Price:</label><br>
                                                 <input type="number" name="service_price" class="form-control" value="<?= $prod['prod_price'] ?>">
                                             </div>
@@ -120,3 +121,16 @@
 
     </div>
     <!-- /.container-fluid -->
+        <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/libraries/chart/chart.min.js"></script>
+    <script src="../assets/libraries/easing/easing.min.js"></script>
+    <script src="../assets/libraries/waypoints/waypoints.min.js"></script>
+    <script src="../assets/libraries/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../assets/libraries/tempusdominus/js/moment.min.js"></script>
+    <script src="../assets/libraries/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="../assets/libraries/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../assets/js/main.js"></script>

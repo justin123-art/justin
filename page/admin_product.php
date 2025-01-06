@@ -81,7 +81,7 @@ include '../model/admin_model.php';
 
 		$product = $admin->add_product($_POST,$_FILES);
 		
-		$product= $admin->get_product();
+		$product = $admin->get_product();
         
 
 		
